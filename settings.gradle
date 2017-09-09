@@ -1,0 +1,1 @@
+include ':app', ':livepush', ':chatsimple', ':livecollector', ':liveffmpeg'

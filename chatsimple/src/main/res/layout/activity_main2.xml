@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#ffffff"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lv_ll_fv"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分辨率"
+            android:textColor="#333333"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/ej_tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ej_ic_arrow"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_ll_type"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编码方式"
+            android:textColor="#333333"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_x="3px"
+            android:layout_y="54px"
+            >
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="软编吗"
+                />
+            <RadioButton
+                android:id="@+id/RadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="硬编码"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推流地址"
+            android:textColor="#333333"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/rtmp_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:padding="15dp"
+            android:text="rtmp://122.112.244.222:1935/live/test1"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="go"
+        />
+
+
+</LinearLayout>
